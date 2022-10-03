@@ -4,9 +4,7 @@ module.exports = defineConfig({
     'vuetify'
   ],
   lintOnSave:false,
-  transpileDependencies: [
-    'vuetify'
-],
+
 devServer: {
     host: 'localhost',
 }

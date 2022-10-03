@@ -13,10 +13,8 @@ import 'vue-select/dist/vue-select.css';
 
 Vue.config.productionTip = false
 if (process.env.NODE_ENV == 'development') {
-    // axios.defaults.baseURL = 'https://localhost:44337';
     axios.defaults.baseURL = 'http://localhost:5000';
-   // axios.defaults.baseURL = 'http://localhost:5268';
-    //axios.defaults.baseURL = '//apibeinfinitus.niufleex.com';
+
 }
 //else {
 //axios.defaults.baseURL = 'https://apibeinfinitus.niufleex.com';
@@ -35,6 +33,5 @@ new Vue({
     vuetify,
     store,
     axios,
-    
     vSelect
 }).$mount('#app')

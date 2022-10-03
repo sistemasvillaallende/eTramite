@@ -14,7 +14,7 @@
       <v-data-table
         :headers="headers"
         :items="datosTramites"
-        :items-per-page="all"
+        :items-per-page="10"
         id="datosTramites.nro_tramite"
         sort-by="nro_tramite"
         class="elevation-2 table"
@@ -47,10 +47,10 @@
         :headers="headersHisto"
         :items="datosHistorial"
         class="elevation-2 tableDlg"
-        @click:row="editItemDif"
+       
       >
-        <template v-slot:[`item.actionsDif`]="{ item }">
-          <v-icon large class="mr-2" @click="editItemDif(item)">
+        <template v-slot:[`item.actionsDif`]="{  }">
+          <v-icon large class="mr-2" >
             mdi-cross
           </v-icon>
         </template>
